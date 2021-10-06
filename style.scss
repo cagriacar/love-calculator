@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #e0e0e0;
+}
+
+.container {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .calculator {
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    .calculator--header {
+      margin-bottom: 30px;
+      font-size: 1.5rem;
+      span {
+        color: rgba(red, 0.8);
+      }
+    }
+    .calculator--content {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+
+      .content--input {
+        padding: 8px 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        label {
+          font-size: 1rem;
+          color: #000;
+          font-weight: bold;
+        }
+        input {
+          padding: 8px 10px;
+          border: 0;
+          border-radius: 4px;
+          margin-left: 8px;
+
+          &::placeholder {
+            margin-left: 8px;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      button {
+        margin-top: 10px;
+        padding: 10px 8px;
+        border: 0;
+        border-radius: 10px;
+        width: 100px;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          cursor: pointer;
+        }
+        &:active {
+          transform: translate(0px, 6px);
+        }
+      }
+    }
+  }
+  .calculator--result {
+    margin-top: 50px;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: center;
+    padding: 30px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  
+    .result--header{
+      font-size: 1.1rem;
+      margin: 10px 0 40px 0;
+      font-weight: bold;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      
+    }
+    .result--progressbar{
+        width: 100%;
+        background-color: grey;
+        margin-bottom: 20px;
+        border-radius: 10px;
+          #myBar {
+            width: 0%;
+            height: 20px;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            background-color: rgba(red, 0.8);
+         
+          }
+
+    }
+    .result--comment{
+
+       
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            
+            
+        
+    }
+  }
+}

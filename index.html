@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Style CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Love Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        love
+      <div class="calculator">
+        <div class="calculator--header">
+          <h3><span>❤</span> Love Calculator <span>❤</span></h3>
+        </div>
+        <div class="calculator--content">
+          <div class="content--input">
+            <label for="">1. İsmi Girin :</label>
+            <input type="text" id="nameOne" placeholder="İsminizi giriniz" />
+          </div>
+          <div class="content--input">
+            <label for="">2. İsmi Girin :</label>
+            <input type="text" id="nameTwo" placeholder="İsminizi giriniz" />
+          </div>
+          <button>Hesapla ♡</button>
+        </div>
+      </div>
+      <div class="calculator--result">
+          <div class="result--header">
+              isimler
+          </div>
+        <div class="result--progressbar" id="myProgress">
+          <div id="myBar">0%</div>
+        </div>
+        <div class="result--comment">
+           " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, nostrum. "
+        </div>
+      </div>
     </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
